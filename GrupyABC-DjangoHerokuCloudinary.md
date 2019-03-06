@@ -7,7 +7,7 @@ Do Zero ao Deploy
 > ### Vamos precisar:
 * git instalado
 * Python >= 3.7
-* Conta na Heroku
+* Conta na Heroku + CLI instalado
 
 ---
 
