@@ -1,69 +1,57 @@
-Do Zero ao Deploy com Django
-============================
+Do Zero ao Deploy
+=================
+### Django + Heroku + Cloudinary
 
 --
 
-> ### O que precisa:
+> ### Vamos precisar:
 * git instalado
 * Python >= 3.7
 * Conta na Heroku
 
 ---
 
-Ambiente de Desenvolvimento
----------------------------
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+Configurando o Ambiente de Desenvolvimento
+------------------------------------------
 
 --
 
-### Dependencias do projeto
-```bash
-pip install --upgrade pip
-pip install django
-pip freeze > requirements.txt
-```
+![Ambiente de Desenvolvimento](images/ambdev.png)
+
+---
+
+### Dependências do projeto
 
 --
+
+![Dependências do Projeto](images/dependencias-projeto.png)
+
+---
 
 ### Criando o projeto
-```
-django-admin startproject website .
-```
 
 --
 
-### Aplicando as migrações.
-```
-python manage.py migrate
-```
-
---
-
-### Rodando o projeto
-```
-python manage.py runserver
-```
+![Criando o Projeto](images/criando-projeto.png)
 
 ---
 
 ## Heroku
 > (Preparação)
 
+--
+
 O arquivo `Procfile`
-```
-web: gunicorn myproject.wsgi
-```
+
+![O arquivo Procfile](images/procfile.png)
 
 --
 
-### Dependencias Heroku
-```
-pip install gunicorn
-pip install django-heroku
-```
+### Dependências Heroku
+
+--
+
+![Dependências do Heroku](images/dependencias-heroku.png)
 
 --
 
